@@ -1,36 +1,30 @@
 import './App.css';
-import chalk from 'chalk';
+import React, { useState } from 'react';
 
-/* import randomColor from 'randomcolor';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 
-const color = randomColor({
-  luminosity: process.argv[3],
-  hue: process.argv[2],
-});
-console.log(
-  chalk.hex(color).bold(),
-); */
+const App = () => {
+  const [hex, setHex] = useState('#ffffff');
+  const randomizedHex = () => {
+    const randomColor = '#' + Math.floor(Math.random() * 16000000).toString(16);
 
-function App() {
+    setHex(randomColor);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App"
+      style={{
+        backgroundColor: `${hex}`,
+        minHeight: '33.34vh',
+        overflow: 'hidden',
+        zoom: 3,
+      }}
+    >
+      <h1>{hex}</h1>
+      <button onClick={randomizedHex}>Randomize</button>
     </div>
   );
-}
+};
 
 export default App;
