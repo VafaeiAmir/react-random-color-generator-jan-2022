@@ -21,7 +21,7 @@ const App = () => {
         zoom: 3,
       }}
     >
-      <h1>Generated Color:{hex}</h1>
+      <h1>Generated Color: {hex}</h1>
       <button onClick={randomizedHex}>Generate</button>
     </div>
   );
