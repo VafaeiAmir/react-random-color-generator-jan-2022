@@ -13,7 +13,8 @@ const App = () => {
 
   return (
     <div
-      className="App"
+      Generated
+      color="App"
       style={{
         backgroundColor: `${hex}`,
         minHeight: '33.34vh',
