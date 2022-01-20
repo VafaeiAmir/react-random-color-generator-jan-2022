@@ -13,8 +13,7 @@ const App = () => {
 
   return (
     <div
-      Generated
-      color="App"
+      className="App"
       style={{
         backgroundColor: `${hex}`,
         minHeight: '33.34vh',
@@ -22,7 +21,7 @@ const App = () => {
         zoom: 3,
       }}
     >
-      <h1>{hex}</h1>
+      <h1>Generated color:{hex}</h1>
       <button onClick={randomizedHex}>Generate</button>
     </div>
   );
