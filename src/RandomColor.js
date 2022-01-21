@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 
 const RandomColor = () => {
-  const [color, setColor] = useState('#000');
+  const [color, setColor] = useState('#ffffff');
   const getRgb = () => Math.floor(Math.random() * 256);
   const rgbToHex = (r, g, b) =>
     '#' +
