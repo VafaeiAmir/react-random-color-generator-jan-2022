@@ -1,5 +1,4 @@
 import './App.css';
-import { singularize } from 'i/lib/methods';
 import React, { useState } from 'react';
 
 //import logo from './logo.svg';
@@ -22,7 +21,7 @@ const App = () => {
         zoom: 3,
       }}
     >
-      <div>Generated Color: {hex}</div>
+      <div style={{ backgroundColor: `${hex}` }}>Generated Color: {hex}</div>
       <button onClick={randomizedHex}>Generate</button>
     </div>
   );
