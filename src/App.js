@@ -1,8 +1,8 @@
-import './App.css';
+/*import './App.css';
 import React, { useState } from 'react';
 
 /* import chalk from 'chalk';
-import randomColor from 'randomcolor';*/
+import randomColor from 'randomcolor';
 
 const App = () => {
   const [hex, setHex] = useState('#ffffff');
@@ -31,4 +31,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; */
