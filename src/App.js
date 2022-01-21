@@ -1,6 +1,9 @@
 import './App.css';
 import React, { useState } from 'react';
 
+/* import chalk from 'chalk';
+import randomColor from 'randomcolor';*/
+
 const App = () => {
   const [hex, setHex] = useState('#ffffff');
   const randomizedHex = () => {
@@ -8,7 +11,7 @@ const App = () => {
       '#' +
       Math.floor(Math.random() * 16000000)
         .toString(16)
-        .slice(2, 8);
+        .slice(3, 6);
 
     setHex(randomColor);
   };
