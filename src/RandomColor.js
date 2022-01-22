@@ -14,6 +14,7 @@ const RandomColor = () => {
       .join('');
 
   const handleGenerate = () => {
+    // eslint-disable-next-line no-shadow
     const color = {
       r: getRgb(),
       g: getRgb(),
@@ -25,14 +26,12 @@ const RandomColor = () => {
     <div
       className="App"
       style={{
-        backgroundColor: `${color}`,
+        backgroundColor: color,
         minHeight: '33.34vh',
         overflow: 'hidden',
       }}
     >
-      <div style={{ backgroundColor: `${color}` }}>
-        Generated Color: {color}
-      </div>
+      <div style={{ backgroundColor: color }}>Generated Color: {color}</div>
       <button onClick={handleGenerate}>Generate</button>
     </div>
   );
