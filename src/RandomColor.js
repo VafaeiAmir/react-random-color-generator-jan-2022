@@ -26,12 +26,15 @@ const RandomColor = () => {
     <div
       className="App"
       style={{
+        margin: 60,
         backgroundColor: color,
         minHeight: '33.34vh',
         overflow: 'hidden',
       }}
     >
-      <div style={{ backgroundColor: color }}>Generated Color: {color}</div>
+      <div style={{ margin: 10, fontSize: 25, backgroundColor: color }}>
+        Generated Color: {color}
+      </div>
       <button onClick={handleGenerate}>Generate</button>
     </div>
   );

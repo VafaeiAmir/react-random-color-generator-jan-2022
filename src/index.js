@@ -1,8 +1,8 @@
 import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RandomColor from './RandomColor';
 // import App from './App';
+import RandomColor from './RandomColor';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
