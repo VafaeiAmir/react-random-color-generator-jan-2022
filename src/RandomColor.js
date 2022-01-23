@@ -14,7 +14,6 @@ const RandomColor = () => {
       .join('');
 
   const handleGenerate = () => {
-    // eslint-disable-next-line no-shadow
     const color = {
       r: getRgb(),
       g: getRgb(),
