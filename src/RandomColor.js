@@ -14,12 +14,12 @@ const RandomColor = () => {
       .join('');
 
   const handleGenerate = () => {
-    const color = {
+    const generateColor = {
       r: getRgb(),
       g: getRgb(),
       b: getRgb(),
     };
-    setColor(rgbToHex(color.r, color.g, color.b));
+    setColor(rgbToHex(generateColor.r, generateColor.g, generateColor.b));
   };
   return (
     <div
